@@ -409,6 +409,18 @@ select:focus {
   padding: 12px 0 8px;
 }
 
+.footer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+
 /* ── Responsive ──────────────────────────────────── */
 @media (max-width: 480px) {
   .card {

@@ -131,7 +131,16 @@ function App() {
           {output && <OutputSection output={output} />}
         </main>
 
-        <footer className="footer">Made with ☕ &amp; React — {new Date().getFullYear()}</footer>
+        <footer className="footer">
+          Made with ☕ &amp; React — {new Date().getFullYear()} ·{' '}
+          <a
+            href="https://github.com/lastjnl/targetGenerator"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </footer>
       </div>
     </>
   )
