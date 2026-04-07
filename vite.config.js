@@ -10,13 +10,5 @@ export default defineConfig({
     setupFiles: './src/test/setup.js',
     css: true,
   },
-  server: {
-    proxy: {
-      '/api/weather': {
-        target: 'https://api.open-meteo.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/weather/, '/v1/forecast'),
-      },
-    },
-  }
+
 })

@@ -18,7 +18,7 @@ export function weatherCodeToEmoji(code) {
 
 export function fetchWeather(lat, lon) {
   return fetch(
-    `/api/weather?latitude=${lat}&longitude=${lon}&current_weather=true`
+    `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`
   ).then((res) => res.json());
 }
 
